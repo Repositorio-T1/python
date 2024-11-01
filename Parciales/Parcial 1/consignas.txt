@@ -1,0 +1,37 @@
+a. Pedir golosina: Si se selecciona esta opción la maquina solicitara el ingreso
+del legajo del empleado para validar que sea parte de la empresa y puede
+acceder a las golosinas de forma gratuita, si el legajo ingresado no se
+encuentra en el diccionario, deberá emitir el mensaje “Usted no es un
+empleado de la empresa”, caso contrario si el legajo es correcto se pedirá el
+código de la golosina que quiera. Esta máquina tiene golosinas en cada fila,
+identificados por su código, por ejemplo si el usuario teclea 2 significa que
+está pidiendo Chicles. Al seleccionar una golosina debe disminuir la cantidad
+disponible de la golosina. En caso de agotar el stock de la golosina deberá
+informar de la situación al cliente emitiendo el mensaje “Lo sentimos la
+golosina XXXXX no se encuentra disponible, seleccione otra golosina o
+ingresa salir si no desea otra golosina”. Por lo que el empleado tendrá esas 2
+posibilidades para ejecutar. En el caso de que la golosina si posea stock
+además de descontar la cantidad actual de la misma deberá registrar la
+golosina extraída de la maquina en la lista “golosinasPedidas” donde la
+cantidad total pedida se incrementara en 1 cada vez que se pida esa
+golosina, no pudiendo existir más de 1 fila por cada golosina. Finalizada la
+ejecución de esta funcionalidad se debe retornar al menú. 35%
+
+
+b. Mostrar golosinas: mostrara todas las golosinas con la cantidad actual
+disponible, sin la necesidad de ingresar legajo o clave alguna. Finalizada la
+ejecución de esta funcionalidad se debe retornar al menú. 10%
+c. Rellenar golosinas: esta es una función exclusiva de un técnico por lo que
+para su ejecución nos pedirá una contraseña de 3 pasos, si el usuario escribe
+las 3 palabras asignadas en la Tupla “clavesTecnico” respetando el mismo
+orden indicado, nos autorizara y pedirá el código de la golosina, si el código
+UTN-FRM
+es correcto, se pedirá la cantidad a recargar, donde la mima debe ser mayor
+a cero. La cantidad ingresada se sumara a la cantidad actual existente. Si la
+clave ingresada no es válida emitirá el mensaje “No tiene permiso para
+ejecutar la función de recarga”. Finalizada la ejecución de esta
+funcionalidad se debe retornar al menú. 25%
+d. Apagar maquina: sale del programa, antes de salir mostrara la lista
+“golosinasPedidas” listando todas las golosinas pedidas durante la ejecución
+del programa. Indicando también como dato final el total de golosinas
+pedidas, es decir la suma de la columna cantidad total pedida. 15%
